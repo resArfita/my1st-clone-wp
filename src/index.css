@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply max-w-md mx-auto min-h-screen shadow-md text-black border border-gray-600;
+  }
+}
+
+@layer utilities {
+  .text-wp-orange {
+    color: #fe5009;
+  }
+}
