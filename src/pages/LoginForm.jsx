@@ -1,13 +1,14 @@
-// import { useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebookSquare } from "react-icons/fa";
 import { SiWattpad } from "react-icons/si";
 const LoginForm = () => {
-//   const navigate = useNavigate();
+  const navigate = useNavigate();
 
-//   const goToGreeting = () => {
-//     navigate("/greeting");
-//   };
+  //needs to update to Navigate function not useNavigate later on when the backend is ready
+  const goToHome = () => {
+    navigate("/");
+  };
 
   return (
     <>
@@ -30,7 +31,7 @@ const LoginForm = () => {
         <input type="text" placeholder="Email" className="border rounded-full py-2 w-80 mb-5" />
         <input type="password" placeholder="Password" className="border rounded-full py-2 w-80 mb-5" />
         <div className="border bg-black rounded-full py-2 w-80 my-4">
-          <p className="text-sm text-white cursor-pointer text-center font-semibold">Login</p>
+          <p className="text-sm text-white cursor-pointer text-center font-semibold" onClick={goToHome}>Login</p>
         </div>
         <p className="font-bold cursor-pointer">Forgot password?</p>
 

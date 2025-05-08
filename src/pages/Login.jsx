@@ -35,10 +35,10 @@ const Login = () => {
           <p>or</p>
         </div>
         <div className="border bg-black cursor-pointer rounded-full py-2 px-24">
-          <p className="text-sm text-white font-semibold" onClick={goToLoginForm}>Sign up with email</p>
+          <p className="text-sm text-white font-semibold">Sign up with email</p>
         </div>
 
-        <p className="mt-30 font-bold cursor-pointer">I already have an account</p>
+        <p className="mt-30 font-bold cursor-pointer" onClick={goToLoginForm}>I already have an account</p>
       </div>
     </>
   );

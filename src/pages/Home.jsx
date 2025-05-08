@@ -1,17 +1,24 @@
-import { useNavigate } from "react-router"
+// import { useNavigate } from "react-router"
+import Header from "../components/Header"
+import Banner from "../components/Banner"
+import Personalize from "../components/Personalize"
+import TopPicks from "../components/TopPicks"
+import EditorChoice from "../components/EditorChoice"
+import Recommendation from "../components/Recommendation"
 
 const Home = () => {
 
-    const navigate = useNavigate()
-
-    const goToLogin = () => {
-        navigate("/login")
-    }
+    
     return (
-        <div>
-            <h1>this is Home</h1>
-            <button onClick={goToLogin}>Login</button>
-        </div>
+        <>
+        <Header />
+        <Banner />
+        <Personalize />
+        <TopPicks />
+        <EditorChoice />
+        <Recommendation />
+        </>
+        
     )
 }
 
