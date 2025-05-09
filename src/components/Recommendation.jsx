@@ -1,4 +1,5 @@
 import Views from "../utils/Views";
+import Tag from "../utils/Tag";
 
 const Recommendation = () => {
   return (
@@ -11,12 +12,9 @@ const Recommendation = () => {
               src="https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740"
               alt=""
               width={130}
-              className="rounded-md"
+              className="rounded-md cursor-pointer"
             />
-            <p className="text-sm font-bold mt-2 bg-gray-100 rounded-md py-1 px-2">
-              fantasy
-            </p>
-            <Views />
+            <Tag name="Psychology" />
           </div>
 
           <div className="mt-2">
@@ -24,22 +22,18 @@ const Recommendation = () => {
               src="https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740"
               alt=""
               width={130}
-              className="rounded-md"
+              className="rounded-md cursor-pointer"
             />
-            <p className="text-sm font-bold mt-2 bg-gray-100 rounded-md py-1 px-2">
-              sci-fi
-            </p>
+            <Tag name="Sci-fi" />
           </div>
           <div className="mt-2">
             <img
               src="https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740"
               alt=""
               width={130}
-              className="rounded-md"
+              className="rounded-md cursor-pointer"
             />
-            <p className="text-sm font-bold mt-2 bg-gray-100 rounded-md py-1 px-2">
-              romance
-            </p>
+            <Tag name="Romance" />
           </div>
         </div>
       </div>

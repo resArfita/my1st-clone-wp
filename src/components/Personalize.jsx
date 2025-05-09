@@ -10,7 +10,7 @@ const Personalize = () => {
                 src="https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740"
                 alt=""
                 width={90}
-                className="rounded-md"
+                className="rounded-md cursor-pointer"
               />
               <p className="text-sm text-gray-500 font-bold">2 new parts</p>
               <p className="text-sm font-bold ">Part 16</p>
@@ -20,7 +20,7 @@ const Personalize = () => {
                 src="https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740"
                 alt=""
                 width={90}
-                className="rounded-md"
+                className="rounded-md cursor-pointer"
               />
               <p className="text-sm text-gray-500 font-bold">Continue</p>
               <p className="text-sm font-bold ">Part 2</p>
@@ -30,7 +30,7 @@ const Personalize = () => {
                 src="https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740"
                 alt=""
                 width={90}
-                className="rounded-md"
+                className="rounded-md cursor-pointer"
               />
               <p className="text-sm text-gray-500 font-bold">Continue</p>
               <p className="text-sm font-bold ">Part 2</p>
@@ -40,7 +40,7 @@ const Personalize = () => {
                 src="https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740"
                 alt=""
                 width={90}
-                className="rounded-md"
+                className="rounded-md cursor-pointer"
               />
               <p className="text-sm text-gray-500 font-bold">Continue</p>
               <p className="text-sm font-bold ">Part 2</p>
