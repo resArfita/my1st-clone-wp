@@ -1,8 +1,15 @@
 import Tag from "../utils/Tag";
 import ButtonArrow from "../utils/ButtonArrow";
 import { SiWattpad } from "react-icons/si";
+import { useNavigate } from "react-router";
 
 const WpOriginals = () => {
+  const navigate = useNavigate();
+
+  const goToWpOriginals = () => {
+    navigate("/wp_originals");
+  };
+
   return (
     <>
       <div className="flex flex-col mx-5 mb-6">
@@ -13,7 +20,9 @@ const WpOriginals = () => {
 
         <div className="flex items-center justify-between">
           <p className="text-xl font-bold">Your instant escape</p>
-          <ButtonArrow />
+          <div className="cursor-pointer" onClick={goToWpOriginals}>
+            <ButtonArrow />
+          </div>
         </div>
 
         <div className="flex gap-3 mt-2">

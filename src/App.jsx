@@ -3,6 +3,8 @@ import Home from "./pages/Home"
 import Login from "./pages/Login"
 import Greeting from "./pages/Greeting"
 import LoginForm from "./pages/LoginForm"
+import PremiumPicksPage from "./pages/PremiumPicksPage"
+import WpOriginalsPage from "./pages/WpOriginalsPage"
 function App() {
 
 
@@ -13,7 +15,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/greeting" element={<Greeting />} />
         <Route path="/login" element={<Login />}/>
-        <Route path="loginform" element={<LoginForm />}/>
+        <Route path="/loginform" element={<LoginForm />}/>
+        <Route path="/premium_picks" element={<PremiumPicksPage />}/>
+        <Route path="/wp_originals" element={<WpOriginalsPage />}/>
       </Routes>
     </>
   )
