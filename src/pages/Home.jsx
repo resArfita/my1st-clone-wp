@@ -15,6 +15,7 @@ import WpOriginals from "../components/WpOriginals"
 import Recommendation7 from "../components/Recommendation7"
 import Recommendation8 from "../components/Recommendation8"
 import Recommendation9 from "../components/Recommendation9"
+import NavBar from "../components/NavBar"
 
 const Home = () => {
 
@@ -37,6 +38,7 @@ const Home = () => {
         <Recommendation7 />
         <Recommendation8 />
         <Recommendation9 />
+        <NavBar />
         </>
         
     )

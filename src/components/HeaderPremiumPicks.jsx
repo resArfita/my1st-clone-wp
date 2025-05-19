@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router";
 import { FaArrowLeft } from "react-icons/fa6";
 import { RxQuestionMarkCircled } from "react-icons/rx";
 import { GoClock } from "react-icons/go";
-// import PremiumPageTemplate from "../router_outlet/PremiumPageTemplate";
 
 const HeaderPremiumPicks = () => {
   const navigate = useNavigate();
@@ -12,6 +11,7 @@ const HeaderPremiumPicks = () => {
     navigate("/");
   };
 
+  // needs to update== probably use outlet in the header
   return (
     <>
       <div className="sticky top-0 bg-[#291C61] w-full h-50 pt-5 flex flex-col">
