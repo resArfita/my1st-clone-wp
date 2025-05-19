@@ -2,7 +2,7 @@
 
 @layer base {
   body {
-    @apply max-w-md mx-auto min-h-screen shadow-md text-black border border-gray-600;
+    @apply max-w-md mx-auto min-h-screen shadow-md text-black border-r-2 border-l-2 border-gray-600;
   }
 }
 
