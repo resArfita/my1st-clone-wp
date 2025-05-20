@@ -3,7 +3,7 @@ import { FiSearch } from "react-icons/fi";
 import { LuLibrary } from "react-icons/lu";
 import { GoPencil } from "react-icons/go";
 import { BiBell } from "react-icons/bi";
-import { Link } from "react-router";
+import { Link, Outlet } from "react-router";
 
 
 const NavBar = () => {
