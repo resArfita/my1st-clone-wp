@@ -1,13 +1,14 @@
 import HeaderPremiumPicks from "../components/HeaderPremiumPicks";
-import PremPicksThisMonth from "../components/PremPicksThisMonth";
+import { Outlet } from "react-router";
 
 const PremiumPicksPage = () => {
-    return (
-        <>
-        <HeaderPremiumPicks />
-        <PremPicksThisMonth />
-        </>
-    )
-}
+  return (
+    <>
+      <HeaderPremiumPicks />
+
+      <Outlet />
+    </>
+  );
+};
 
 export default PremiumPicksPage;

@@ -38,7 +38,7 @@ const Home = () => {
         <Recommendation7 />
         <Recommendation8 />
         <Recommendation9 />
-        <NavBar />
+        {/* <NavBar /> */}
         </>
         
     )

@@ -4,16 +4,12 @@ import ButtonLibrary from "../utils/ButtonLibrary";
 import { IoEyeSharp } from "react-icons/io5";
 import { IoIosStar } from "react-icons/io";
 import { FaList } from "react-icons/fa6";
-import HeaderPremiumPicks from "./HeaderPremiumPicks";
 
 
 
 const PremiumPicksNextMonth = () => {
   return (
     <>
-    
-    <HeaderPremiumPicks />
-
       <div>
         <div className="bg-[#F6F2FF] w-full h-45 flex flex-col items-center">
           <p className="text-gray-800 font-semibold text-center mt-5 mb-5">
