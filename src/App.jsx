@@ -8,12 +8,15 @@ import PremPicksThisMonth from "./components/PremPicksThisMonth";
 import PremiumPicksNextMonth from "./components/PremiumPicksNextMonth";
 import WpOriginalsPage from "./pages/WpOriginalsPage";
 import SearchPage from "./pages/SearchPage";
-import Library from "./pages/Library";
 import Write from "./pages/Write";
 import NotificationPage from "./pages/NotificationPage";
 import NotificationContent from "./components/NotificationContent";
 import NotificationMessages from "./components/NotificationMessages";
 import NavbarOutlet from "./layouts/NavbarOutlet";
+import Library from "./pages/Library";
+import LibraryCurrentReads from "./components/LibraryCurrentReads";
+import LibraryArchive from "./components/LibraryArchive";
+import LibraryReadingList from "./components/LibraryReadingList";
 
 function App() {
   return (
@@ -35,14 +38,21 @@ function App() {
         <Route element={<NavbarOutlet />}>
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<SearchPage />} />
-          <Route path="/library" element={<Library />} />
+
+          {/* nested route for library page */}
+          <Route element={<Library />}>
+            <Route path="/library" element={<LibraryCurrentReads />} />
+            <Route path="/archive" element={<LibraryArchive />} />
+            <Route path="/reading_list" element={<LibraryReadingList />} />
+          </Route>
+
           <Route path="/write" element={<Write />} />
 
+          {/* nested route for notivication page */}
           <Route element={<NotificationPage />}>
             <Route path="/notification" element={<NotificationContent />} />
             <Route path="/messages" element={<NotificationMessages />} />
           </Route>
-
         </Route>
       </Routes>
     </>

@@ -1,9 +1,12 @@
-
+import HeaderLibrary from "../components/HeaderLibrary";
+import { Outlet } from "react-router";
 
 const Library = () => {
     return(
         <>
-        <p>Library Page</p>
+        <HeaderLibrary />
+        
+        <Outlet />
         </>
     )
 }
