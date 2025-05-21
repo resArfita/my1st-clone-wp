@@ -10,8 +10,10 @@ import WpOriginalsPage from "./pages/WpOriginalsPage";
 import SearchPage from "./pages/SearchPage";
 import Library from "./pages/Library";
 import Write from "./pages/Write";
-import Notification from "./pages/Notification";
-import NavbarOutlet from "./pages/NavbarOutlet";
+import NotificationPage from "./pages/NotificationPage";
+import NotificationContent from "./components/NotificationContent";
+import NotificationMessages from "./components/NotificationMessages";
+import NavbarOutlet from "./layouts/NavbarOutlet";
 
 function App() {
   return (
@@ -35,7 +37,12 @@ function App() {
           <Route path="/search" element={<SearchPage />} />
           <Route path="/library" element={<Library />} />
           <Route path="/write" element={<Write />} />
-          <Route path="/notification" element={<Notification />} />
+
+          <Route element={<NotificationPage />}>
+            <Route path="/notification" element={<NotificationContent />} />
+            <Route path="/messages" element={<NotificationMessages />} />
+          </Route>
+
         </Route>
       </Routes>
     </>
