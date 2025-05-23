@@ -1,9 +1,11 @@
-
+import HeaderSearch from "../components/HeaderSearch";
+import SearchContent from "../components/SearchContent";
 
 const SearchPage = () => {
     return(
         <>
-        <p>Search Page</p>
+        <HeaderSearch />
+        <SearchContent />
         </>
     )
 }
