@@ -3,7 +3,10 @@
 const Write = () => {
     return(
         <>
-        <p>Write Page</p>
+        <div className="h-screen">
+           <p>Write Page</p> 
+        </div>
+        
         </>
     )
 }
