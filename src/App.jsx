@@ -17,6 +17,8 @@ import Library from "./pages/Library";
 import LibraryCurrentReads from "./components/LibraryCurrentReads";
 import LibraryArchive from "./components/LibraryArchive";
 import LibraryReadingList from "./components/LibraryReadingList";
+import StoryPage from "./pages/StoryPage";
+import DetailStory from "./pages/DetailStory";
 
 function App() {
   return (
@@ -27,6 +29,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/loginform" element={<LoginForm />} />
         <Route path="/wp_originals" element={<WpOriginalsPage />} />
+
+        <Route path="/read" element={<StoryPage />} />
+        <Route path="/detail_story" element={<DetailStory />} />
 
         {/* nested route for premium picks */}
         <Route element={<PremiumPicksPage />}>
