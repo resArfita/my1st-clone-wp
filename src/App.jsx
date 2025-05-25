@@ -19,6 +19,7 @@ import LibraryArchive from "./components/LibraryArchive";
 import LibraryReadingList from "./components/LibraryReadingList";
 import StoryPage from "./pages/StoryPage";
 import DetailStory from "./pages/DetailStory";
+import SidebarRead from "./components/SidebarRead";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
 
         <Route path="/read" element={<StoryPage />} />
         <Route path="/detail_story" element={<DetailStory />} />
+        <Route path="/sidebar" element={<SidebarRead />}/>
 
         {/* nested route for premium picks */}
         <Route element={<PremiumPicksPage />}>
