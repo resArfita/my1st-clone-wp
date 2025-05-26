@@ -7,7 +7,7 @@ import { FaArrowLeft } from "react-icons/fa6";
 import { forwardRef } from "react";
 import SidebarRead from "./SidebarRead";
 
-const HeaderRead = forwardRef((props, ref) => {
+const HeaderRead = forwardRef(({ onToggleSidebar }, props, ref) => {
     const navigate = useNavigate();
 
     const goBack = () => {
@@ -25,7 +25,9 @@ const HeaderRead = forwardRef((props, ref) => {
           <h1 className="text-2xl font-semibold">Title Story..</h1>
           <MdDownloadDone size={30} />
           <RiFontSize size={30} />
-          <FaList size={30} />
+          <button onClick={onToggleSidebar} className="cursor-pointer">
+            <FaList size={30} />
+          </button>
         </div>
       </div>
     </>

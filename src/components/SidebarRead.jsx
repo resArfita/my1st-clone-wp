@@ -24,12 +24,24 @@ const storyChapter = [
         id: 6,
         chapter: "Chapter 6",
     },
+    {
+        id: 7,
+        chapter: "Chapter 7",
+    },
+    {
+        id: 8,
+        chapter: "Chapter 8",
+    },
+    {
+        id: 9,
+        chapter: "Chapter 9",
+    },
 ];
 
 const SidebarRead = () => {
     return (
         <>
-        <div className="bg-white border-l border-gray-300 h-full w-80 ml-31 top-0">
+        <div className="">
             <div className="flex flex-col">
                 <div className="mx-auto flex flex-col items-center my-4">
                     <img src="https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740"
