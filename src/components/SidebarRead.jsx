@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router";
 
 const storyChapter = [
     {
@@ -39,6 +40,11 @@ const storyChapter = [
 ];
 
 const SidebarRead = () => {
+    const navigate = useNavigate();
+    const goToDetail = () => {
+        navigate("/detail_story");
+    }
+
     return (
         <>
         <div className="">
@@ -48,14 +54,14 @@ const SidebarRead = () => {
                     alt=""
                     width={150}
                     className="mt-2" />
-                    <p className="mt-7 font-semibold text-xl">Title Story</p>
+                    <p className="mt-7 font-semibold text-xl cursor-pointer" onClick={goToDetail}>Title Story</p>
                     <p className="mt-6 font-semibold">author username</p>
                 </div>
             </div>
             <hr className="text-gray-400 my-6" />
             <div className="text-lg ml-3">
                 {storyChapter.map((chapter) => (
-                    <p key={chapter.id} className="mb-8">{chapter.chapter}</p>
+                    <p key={chapter.id} className="mb-8 cursor-pointer hover:font-bold">{chapter.chapter}</p>
                 ))}
                 
             </div>

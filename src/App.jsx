@@ -33,7 +33,6 @@ function App() {
 
         <Route path="/read" element={<StoryPage />} />
         <Route path="/detail_story" element={<DetailStory />} />
-        <Route path="/sidebar" element={<SidebarRead />}/>
 
         {/* nested route for premium picks */}
         <Route element={<PremiumPicksPage />}>
