@@ -7,12 +7,17 @@ import NavbarRead from "../components/NavbarRead";
 import HeaderRead from "../components/HeaderRead";
 import { useEffect, useRef, useState } from "react";
 import SidebarRead from "../components/SidebarRead";
+import { useParams } from "react-router";
+import books from "../data/Books";
 
 const StoryPage = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const headerRef = useRef(null);
   const footerRef = useRef(null);
   const [showSidebar, setShowSidebar] = useState(false);
+  const { id } = useParams();
+
+  const storyId = books.find((item) => item.id === parseInt(id));
 
   const toggleSidebar = () => {
     setShowSidebar((prev) => !prev);
@@ -53,37 +58,34 @@ const StoryPage = () => {
         )}
 
         <div className="pt-4 flex flex-col mx-5">
-          <h1 className="text-xl mx-auto">1. Chapter Title</h1>
+          <h1 className="text-xl mx-auto">{storyId.chapterContent[0].subtitle}</h1>
           <div className="flex items-center gap-3 mx-auto my-16">
             <div className="flex items-center gap-1">
               <MdOutlineRemoveRedEye size={23} />
-              <p>53.5K</p>
+              <p>{storyId.views}</p>
             </div>
             <div className="flex items-center gap-1">
               <IoMdStarOutline size={26} />
-              <p>4.49K</p>
+              <p>{storyId.votes}</p>
             </div>
             <div className="flex items-center gap-1">
               <BiComment size={17} />
-              <p>322</p>
+              <p>{storyId.comments}</p>
             </div>
           </div>
           <div className="">
             <p className="text-md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              quaerat culpa, temporibus repellendus blanditiis voluptate enim
-              inventore labore tenetur modi eveniet nam debitis. Perferendis
-              illum quis quae sed cumque unde.
+              {storyId.chapterContent[0].content}
             </p>
           </div>
           <div className="flex items-center gap-18 mx-auto bottom-0">
             <div className="flex flex-col items-center gap-1">
               <IoMdStarOutline size={30} className="text-wp-orange" />
-              <p className="text-sm">4.49K</p>
+              <p className="text-sm">{storyId.votes}</p>
             </div>
             <div className="flex flex-col items-center gap-1">
               <BiComment size={30} className="text-wp-orange" />
-              <p className="text-sm">322</p>
+              <p className="text-sm">{storyId.comments}</p>
             </div>
             <div className="flex flex-col items-center gap-1">
               <IoShareSocial size={30} className="text-wp-orange" />

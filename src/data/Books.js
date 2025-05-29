@@ -9,6 +9,7 @@ const books = [
     author: "reffect",
     views: "1.33M",
     votes: "14.8K",
+    comments: "322",
     tags: ["dark", "cinta", "adult", "+15 more"],
     chapters: "24", //it can be merge with the chapterContent, but can do it later
     chapterContent: [
@@ -49,6 +50,7 @@ const books = [
     author: "author 2",
     views: "7.65M",
     votes: "408K",
+    comments: "222",
     tags: ["miskin", "fiksi", "hidupkembali", "+22 more"],
     chapters: "74",
     chapterContent: [
@@ -89,6 +91,7 @@ const books = [
     author: "author 3",
     views: "1.22M",
     votes: "58.4K",
+    comments: "32",
     tags: ["gemuk", "romansa", "adult", "+21 more"],
     chapters: "46",
     chapterContent: [
@@ -129,6 +132,7 @@ const books = [
     author: "author 4",
     views: "1.33M",
     votes: "14.8K",
+    comments: "22",
     tags: ["dark", "cinta", "adult", "+15 more"],
     chapters: "24",
     chapterContent: [
@@ -169,6 +173,7 @@ const books = [
   //   author: "author 5",
   //   views: "1.33M",
   //   votes: "14.8K",
+  //   comments: "322",
   //   tags: ["dark", "cinta", "adult", "+15 more"],
   //   chapters: "24",
   //   chapterContent: [
