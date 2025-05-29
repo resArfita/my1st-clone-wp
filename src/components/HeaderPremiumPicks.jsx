@@ -32,7 +32,7 @@ const HeaderPremiumPicks = () => {
           <button className="text-sm font-semibold">Expiring in 15d 8h</button>
         </div>
         <div className="text-white flex justify-between mt-11">
-          <Link to="/premium_picks" className="py-3 px-17 active:font-bold">This Month</Link>
+          <Link to="/premium_picks" className="py-3 px-17 active:font-bold font-bold">This Month</Link>
           <Link to="/premium_picks2" className=" py-3 px-17 active:font-bold">Next Month</Link>
         </div>
       </div>

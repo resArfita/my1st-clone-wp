@@ -9,7 +9,7 @@ const Header = () => {
       <div className="flex justify-between mx-5 top-0 pt-3">
         <SiWattpad size={38} color={"#fe5009"} />
         <div className="flex items-center gap-3 mb-2">
-          <ButtonPremium />
+          <ButtonPremium name={"Try Premium"} />
           <ButtonGift />
           <Profile1 />
         </div>
