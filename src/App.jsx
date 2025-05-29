@@ -19,6 +19,9 @@ import LibraryArchive from "./components/LibraryArchive";
 import LibraryReadingList from "./components/LibraryReadingList";
 import StoryPage from "./pages/StoryPage";
 import DetailStory from "./pages/DetailStory";
+import DetailStoryPremium from "./pages/DetailStoryPremium";
+import StoryPagePremium from "./pages/StoryPagePremium";
+import DetailStoryWpOri from "./pages/DetailStoryWpOri";
 import SidebarRead from "./components/SidebarRead";
 
 function App() {
@@ -33,6 +36,9 @@ function App() {
 
         <Route path="/read/:id" element={<StoryPage />} />
         <Route path="/detail_story/:id" element={<DetailStory />} />
+        <Route path="/read_premium/:id" element={<StoryPagePremium />} />
+        <Route path="/detail_story_premium/:id" element={<DetailStoryPremium />} />
+        <Route path="/detail_story_wp_original/:id" element={<DetailStoryWpOri />} />
 
         {/* nested route for premium picks */}
         <Route element={<PremiumPicksPage />}>
