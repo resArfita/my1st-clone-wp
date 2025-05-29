@@ -22,20 +22,20 @@ const HeaderSearch = () => {
         </div>
 
         <div className="flex items-center justify-between bg-white py-5 font-semibold text-sm w-full px-6 border-b border-gray-300">
-          <Link to={"/library"}>
+          <Link to={"/search"}>
             <p className="active font-bold cursor-pointer">Romansa</p>
           </Link>
-          <Link>
-            <p className="cursor-pointer text-gray-600 font-semibold">
+          {/* <Link> */}
+            <p className=" text-gray-600 font-semibold">
               Fiksi Remaja
             </p>
-          </Link>
-          <Link>
-            <p className="cursor-pointer text-gray-600 font-semibold">
+          {/* </Link>
+          <Link> */}
+            <p className="text-gray-600 font-semibold">
               Fiksi Penggemar
             </p>
-          </Link>
-          <IoIosArrowDown size={25} className="cursor-pointer" />
+          {/* </Link> */}
+          <IoIosArrowDown size={25} className="" />
         </div>
 
       </div>

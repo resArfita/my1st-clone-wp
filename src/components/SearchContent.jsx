@@ -3,9 +3,16 @@ import { FaList } from "react-icons/fa6";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { IoMdStarOutline } from "react-icons/io";
 import books from "../data/Books"; // mockup data
+import { useNavigate } from "react-router";
 
 
 const SearchContent = () => {
+  const navigate = useNavigate();
+
+  const goToDetailStory = (id) => {
+    navigate(`/detail_story/${id}`);
+  }
+
   return (
     <>
       <div className="h-screen py-3 mt-16 mb-130">
@@ -18,14 +25,16 @@ const SearchContent = () => {
         </div>
 
         {books.map((stories) => (
-          <div key={stories.id} className="flex gap-4 mx-5 mt-6 mb-12">
+          <div
+          key={stories.id}
+          className="flex gap-4 mx-5 mt-6 mb-12 cursor-pointer"
+          onClick={() => goToDetailStory(stories.id)}>
             <img
               src={stories.cover}
               alt=""
               width={108}
-              className="cursor-pointer"
             />
-            <div className="cursor-pointer flex flex-col">
+            <div className="flex flex-col">
               <p className="text-lg mt-2 font-semibold">{stories.title}</p>
               <div className="flex items-center gap-2 text-gray-600">
                 <div className="flex items-center gap-1">
@@ -46,7 +55,7 @@ const SearchContent = () => {
               </p>
               <div className="flex gap-1 items-center flex-wrap">
                 {stories.tags.map((tag, idx) => {
-                  // make the last item of tags have different style (no background)
+                  // nested map to make the last item of tags have different style (no background)
                   const isLast = idx === stories.tags.length - 1;
                   return (
                   <p

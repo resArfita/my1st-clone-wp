@@ -3,9 +3,14 @@ import { MdOutlineRemoveRedEye } from "react-icons/md";
 import HeaderDetailStory from "../components/HeaderDetailStory";
 import { FaList } from "react-icons/fa6";
 import Profile1 from "../utils/Profile1";
-
+import books from "../data/Books";
+import { useParams } from "react-router";
 
 const DetailStory = () => {
+  const { id } = useParams();
+
+  const detailStoryId = books.find((item) => item.id === parseInt(id));
+
   return (
     <>
       {/* cover */}
@@ -15,28 +20,28 @@ const DetailStory = () => {
         </div>
         <div className="absolute inset-0 top-40 flex flex-col justify-center items-center bg-transparent">
           <img
-            src="https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740"
+            src={detailStoryId.cover}
             alt=""
             width={220}
             className="rounded-lg my-9"
           />
-          <p className="text-2xl font-semibold">Title Story</p>
+          <p className="text-2xl font-semibold">{detailStoryId.title}</p>
           <div className="flex items-center gap-3 my-4">
             <Profile1 />
-            <p className="text-gray-600 font-semibold">Author</p>
+            <p className="text-gray-600 font-semibold">{detailStoryId.author}</p>
           </div>
           <div className="flex items-center gap-5 text-gray-500 font-semibold">
             <div className="flex items-center gap-1">
               <MdOutlineRemoveRedEye size={23} />
-              <p>53.5K</p>
+              <p>{detailStoryId.views}</p>
             </div>
             <div className="flex items-center gap-1">
               <IoMdStarOutline size={26} />
-              <p>4.49K</p>
+              <p>{detailStoryId.votes}</p>
             </div>
             <div className="flex items-center gap-1">
               <FaList size={17} />
-              <p>32</p>
+              <p>{detailStoryId.chapters}</p>
             </div>
           </div>
         </div>
