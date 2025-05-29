@@ -32,7 +32,7 @@ function App() {
         <Route path="/wp_originals" element={<WpOriginalsPage />} />
 
         <Route path="/read/:id" element={<StoryPage />} />
-        <Route path="/detail_story" element={<DetailStory />} />
+        <Route path="/detail_story/:id" element={<DetailStory />} />
 
         {/* nested route for premium picks */}
         <Route element={<PremiumPicksPage />}>
