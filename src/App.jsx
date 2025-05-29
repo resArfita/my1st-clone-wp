@@ -31,7 +31,7 @@ function App() {
         <Route path="/loginform" element={<LoginForm />} />
         <Route path="/wp_originals" element={<WpOriginalsPage />} />
 
-        <Route path="/read" element={<StoryPage />} />
+        <Route path="/read/:id" element={<StoryPage />} />
         <Route path="/detail_story" element={<DetailStory />} />
 
         {/* nested route for premium picks */}

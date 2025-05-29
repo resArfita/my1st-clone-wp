@@ -4,8 +4,8 @@ import books from "../data/Books";
 
 const Personalize = () => {
   const navigate = useNavigate();
-  const goToRead = () => {
-    navigate("/read");
+  const goToRead = (id) => {
+    navigate(`read/${id}`);
   }
   return (
     <>
@@ -21,7 +21,7 @@ const Personalize = () => {
                 alt=""
                 width={90}
                 className="rounded-md cursor-pointer"
-                onClick={goToRead}
+                onClick={() => goToRead(item.id)}
               />
               <p className="text-sm text-gray-500 font-bold">{item.latestUpdate}</p>
               <p className="text-sm font-bold ">{item.lastRead}</p>
