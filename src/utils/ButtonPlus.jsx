@@ -4,7 +4,7 @@ import { CiCirclePlus } from "react-icons/ci";
 const ButtonPlus = () => {
     return (
         <>
-        <div className="cursor-pointer">
+        <div className="">
             <CiCirclePlus size={55} />
         </div>
         

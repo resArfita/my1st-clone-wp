@@ -4,7 +4,8 @@ const originalsbook = [
     title: "The Entrepreneur's Blueprint",
     cover:
       "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
-    status: "on going",
+    status: "On going",
+    summary: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde.",
     author: "SuccessMindset",
     views: "780K",
     votes: "3.2K",
@@ -44,7 +45,8 @@ const originalsbook = [
     title: "The Mystery of Blackwood Manor",
     cover:
       "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
-    status: "on going",
+    status: "On going",
+    summary: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde.",
     author: "DetectiveFanatic",
     views: "987K",
     votes: "4.5K",

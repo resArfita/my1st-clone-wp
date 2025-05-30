@@ -1,13 +1,23 @@
 import Views from "../utils/Views";
 import Status from "../utils/Status";
 import ButtonPlus from "../utils/ButtonPlus";
+import originalsbook from "../data/OriginalsBook";
+import { useNavigate } from "react-router";
 
 const FeaturedStory = () => {
+  const navigate = useNavigate();
+
+  //initialize a var to choose one specific book to be rendered
+  const featuredBookSpecific = originalsbook[0];
+
+  const goToReadPremium = (id) => {
+    navigate(`/read_premium/${id}`);
+  }
   return (
     <>
       <div className="flex flex-col mx-5 mb-6">
         <p className="text-xl font-bold">Featured story</p>
-        <div className="flex flex-col gap-3 mt-2 cursor-pointer">
+        <div className="flex flex-col gap-3 mt-2">
 
           <div className="flex gap-5">
             <div className="mt-2">
@@ -18,23 +28,24 @@ const FeaturedStory = () => {
                 className="rounded-md"
               />
             </div>
-            {/* this area need to be fixed */}
-            <div className="my-12">
-              <p className="text-xl font-bold mb-3">The Proposal</p>
+            {/* this area need to be fixed ==> fixed by limit the character of summary in the book with slice */}
+            <div className="mt-12">
+              <p className="text-xl font-bold mb-3">{featuredBookSpecific.title}</p>
               <div className="pr-5 mb-2">
-                <p className=" text-sm font-semibold text-gray-400">What happens when an arrogant</p>
-              {/* <p>what happends when an arrogant hockey star falls for an honor student that only wants to stay away from him</p> */}
+                <p className=" text-sm font-semibold text-gray-400">{featuredBookSpecific.summary.slice(0, 30)} ...</p>
               </div>
               <div className="flex gap-2">
-                <Views />
-              <Status />
+                <Views total={featuredBookSpecific.views} />
+              <Status status={featuredBookSpecific.status} />
               </div>
               
             </div>
           </div>
 
           <div className="flex items-center gap-2">
-            <button className="bg-black text-white rounded-full w-full py-2.5 font-semibold cursor-pointer">Read now</button>
+            <button
+            className="bg-black text-white rounded-full w-full py-2.5 font-semibold cursor-pointer"
+            onClick={() => goToReadPremium(featuredBookSpecific.id)}>Read now</button>
             <ButtonPlus />
           </div>
 
