@@ -3,14 +3,16 @@ import Status from "../utils/Status";
 import Time from "../utils/Time";
 import ButtonArrow from "../utils/ButtonArrow";
 import { useNavigate } from "react-router";
-
+import premiumbooks from "../data/PremiumBooks";
 
 const PremiumPicks = () => {
   const navigate = useNavigate();
 
+    //initialize a var to choose one specific book to be rendered
+    const premiumBookSpecific = premiumbooks[0];
+
   const goToPremiumPicks = () => {
     navigate("/premium_picks");
-    
   };
 
   return (
@@ -43,16 +45,16 @@ const PremiumPicks = () => {
 
           {/* this area need to be fixed */}
           <div className="my-12 cursor-pointer">
-            <p className="text-xl font-bold mb-3">The Proposal</p>
+            <p className="text-xl font-bold mb-3">{premiumBookSpecific.title}</p>
             <div className="pr-5 mb-2">
               <p className=" text-sm font-semibold text-gray-400">
-                What happens when an arrogant
+                {premiumBookSpecific.summary.slice(0, 30)} ...
               </p>
               {/* <p>what happends when an arrogant hockey star falls for an honor student that only wants to stay away from him</p> */}
             </div>
             <div className="flex gap-2">
-              <Views />
-              <Status />
+              <Views total={premiumBookSpecific.views}/>
+              <Status status={premiumBookSpecific.status}/>
             </div>
           </div>
         </div>
