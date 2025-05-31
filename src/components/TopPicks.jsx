@@ -9,13 +9,16 @@ const TopPicks = () => {
     navigate(`/detail_story_premium/${id}`);
   };
 
+    //limit to only show 3 items (need to be updated after there's slider)
+    const getThreeItems = premiumBooks.slice(0, 3);
+
   return (
     <>
       <div className="flex flex-col mx-5 mb-6">
         <p className="text-xl font-bold">Top picks for you</p>
         <div className="flex gap-3 mt-2">
           
-          {premiumBooks.map((item) => (
+          {getThreeItems.map((item) => (
 
           
           <div

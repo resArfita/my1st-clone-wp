@@ -1,40 +1,39 @@
 import Views from "../utils/Views";
 import Tag from "../utils/Tag";
+import { useNavigate } from "react-router";
+import books from "../data/Books";
 
 const Recommendation = () => {
+  const navigate = useNavigate();
+
+  const goToDetailStory = (id) => {
+    navigate(`/detail_story/${id}`);
+  }
+
+  const getThreeItems = books.slice(3, 6);
+
   return (
     <>
       <div className="flex flex-col mx-5 mb-6">
         <p className="text-xl font-bold">Recommended for you</p>
         <div className="flex gap-3 mt-2">
-          <div className="mt-2">
+          {getThreeItems.map((item) => (
+            
+          
+          <div
+          id={item.id}
+          className="mt-2">
             <img
-              src="https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740"
-              alt=""
+              src={item.cover}
+              alt={item.title}
               width={130}
               className="rounded-md cursor-pointer"
+              onClick={() => goToDetailStory(item.id)}
             />
-            <Tag name="Psychology" />
+            <Tag name={item.tags[0]} />
           </div>
-
-          <div className="mt-2">
-            <img
-              src="https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740"
-              alt=""
-              width={130}
-              className="rounded-md cursor-pointer"
-            />
-            <Tag name="Sci-fi" />
-          </div>
-          <div className="mt-2">
-            <img
-              src="https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740"
-              alt=""
-              width={130}
-              className="rounded-md cursor-pointer"
-            />
-            <Tag name="Romance" />
-          </div>
+))}
+          
         </div>
       </div>
     </>

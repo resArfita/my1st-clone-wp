@@ -1,17 +1,17 @@
 const books = [
   {
     id: 1,
-    title: "My Hero, My Boss",
+    title: "Beneath the Crimson Moon",
     cover:
       "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
-     latestUpdate: "2 new parts",
-    lastRead: "part 16",
-    author: "reffect",
+     latestUpdate: "9 new parts",
+    lastRead: "part 29",
+    author: "Grace Adams",
     views: "1.33M",
     votes: "14.8K",
     comments: "322",
     tags: ["dark", "cinta", "adult", "+15 more"],
-    chapters: "24", //it can be merge with the chapterContent, but can do it later
+    chapters: "24", //it can be merge with the chapterContent (with length - 1 method), but can do it later
     chapterContent: [
       {
         id: 1,
@@ -42,12 +42,12 @@ const books = [
   },
   {
     id: 2,
-    title: "The Antagonist",
+    title: "The Antagonist World",
     cover:
       "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
     latestUpdate: "3 new parts",
     lastRead: "part 2",
-    author: "author 2",
+    author: "whitney",
     views: "7.65M",
     votes: "408K",
     comments: "222",
@@ -83,12 +83,12 @@ const books = [
   },
   {
     id: 3,
-    title: "Fat Princess",
+    title: "Fat Princess of the Sea",
     cover:
       "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
     latestUpdate: "2 new parts",
     lastRead: "part 8",
-    author: "author 3",
+    author: "Lily",
     views: "1.22M",
     votes: "58.4K",
     comments: "32",
@@ -124,17 +124,17 @@ const books = [
   },
   {
     id: 4,
-    title: "Book 4",
+    title: "The Dragon's Breath",
     cover:
       "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
-        latestUpdate: "continue",
-    lastRead: "part 20",
-    author: "author 4",
-    views: "1.33M",
-    votes: "14.8K",
-    comments: "22",
-    tags: ["dark", "cinta", "adult", "+15 more"],
-    chapters: "24",
+        latestUpdate: "5 new parts",
+    lastRead: "Chapter 48",
+    author: "Frank Stone",
+    views: "3.2M",
+    votes: "35.1K",
+    comments: "68",
+    tags: ["high fantasy", "epic", "action", "+12 more"],
+    chapters: "55",
     chapterContent: [
       {
         id: 1,
@@ -163,47 +163,170 @@ const books = [
       },
     ]
   },
-  // {
-  //   id: 5,
-  //   title: "Book 5",
-  //   cover:
-  //     "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
-  //   latestUpdate: "continue",
-  //   lastRead: "part 20",
-  //   author: "author 5",
-  //   views: "1.33M",
-  //   votes: "14.8K",
-  //   comments: "322",
-  //   tags: ["dark", "cinta", "adult", "+15 more"],
-  //   chapters: "24",
-  //   chapterContent: [
-  //     {
-  //       id: 1,
-  //       subtitle: "Chapter 1",
-  //       content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
-  //     },
-  //     {
-  //       id: 2,
-  //       subtitle: "Chapter 2",
-  //       content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
-  //     },
-  //     {
-  //       id: 3,
-  //       subtitle: "Chapter 3",
-  //       content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
-  //     },
-  //     {
-  //       id: 4,
-  //       subtitle: "Chapter 4",
-  //       content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
-  //     },
-  //     {
-  //       id: 5,
-  //       subtitle: "Chapter 5",
-  //       content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
-  //     },
-  //   ]
-  // },
+  {
+    id: 5,
+    title: "The Whispering Woods",
+    cover:
+      "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
+    latestUpdate: "4 new parts",
+    lastRead: "part 35",
+    author: "Alice Green",
+    views: "1.2.1M",
+    votes: "25.3K.8K",
+    comments: "45",
+    tags: ["fantasy", "adventure", "magic", "+10 more"],
+    chapters: "40",
+    chapterContent: [
+      {
+        id: 1,
+        subtitle: "Chapter 1",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 2,
+        subtitle: "Chapter 2",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 3,
+        subtitle: "Chapter 3",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 4,
+        subtitle: "Chapter 4",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 5,
+        subtitle: "Chapter 5",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+    ]
+  },
+  {
+    id: 6,
+    title: "City of Shadows",
+    cover:
+      "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
+    latestUpdate: "1 new part",
+    lastRead: "part 15",
+    author: "Bob Black",
+    views: "875K",
+    votes: "9.1K",
+    comments: "18",
+    tags: ["sci-fi", "dystopian", "thriller", "+8 more"],
+    chapters: "22",
+    chapterContent: [
+      {
+        id: 1,
+        subtitle: "Chapter 1",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 2,
+        subtitle: "Chapter 2",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 3,
+        subtitle: "Chapter 3",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 4,
+        subtitle: "Chapter 4",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 5,
+        subtitle: "Chapter 5",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+    ]
+  },
+  {
+    id: 7,
+    title: "Love's Echoes",
+    cover:
+      "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
+    latestUpdate: "6 new parts",
+    lastRead: "part 27",
+    author: "Carol White",
+    views: "1.5M",
+    votes: "18.0K",
+    comments: "30",
+    tags: ["romance", "drama", "slice of life", "+5 more"],
+    chapters: "30",
+    chapterContent: [
+      {
+        id: 1,
+        subtitle: "Chapter 1",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 2,
+        subtitle: "Chapter 2",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 3,
+        subtitle: "Chapter 3",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 4,
+        subtitle: "Chapter 4",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 5,
+        subtitle: "Chapter 5",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+    ]
+  },
+  {
+    id: 8,
+    title: "Whispers in the Library",
+    cover:
+      "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
+    latestUpdate: "1 new part",
+    lastRead: "part 5",
+    author: "Emily Rose",
+    views: "410K",
+    votes: "5.5K",
+    comments: "9",
+    tags: ["mystery", "historical", "cozy", "+3 more"],
+    chapters: "18",
+    chapterContent: [
+      {
+        id: 1,
+        subtitle: "Chapter 1",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 2,
+        subtitle: "Chapter 2",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 3,
+        subtitle: "Chapter 3",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 4,
+        subtitle: "Chapter 4",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 5,
+        subtitle: "Chapter 5",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+    ]
+  },
 ];
 
 export default books;

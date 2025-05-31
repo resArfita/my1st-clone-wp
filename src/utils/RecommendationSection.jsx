@@ -1,40 +1,40 @@
 import Tag from "../utils/Tag";
+import { useNavigate } from "react-router";
 
-const RecommendationSection = ({heading}) => {
+const RecommendationSection = ({ heading, booksRec }) => {
+  console.log("📚 booksRec received in RecommendationSection:", booksRec);
+  const navigate = useNavigate();
+
+  const goToDetailStory = (id) => {
+    navigate(`/detail_story/${id}`);
+  };
+
+  if (!Array.isArray(booksRec)) {
+    return <p className="text-red-500">Error: booksRec is not valid</p>;
+  }
+
   return (
     <>
-    {/* idk how, but the tags have to be different in each section */}
+      {/* idk how, but the tags have to be different in each section == solved by using slice or probably in backend logic (so each section can match different tags personalize)*/}
       <div className="flex flex-col mx-5 mb-6">
         <p className="text-xl font-bold">{heading}</p>
         <div className="flex gap-3 mt-2">
-          <div className="mt-2">
-            <img
-              src="https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740"
-              alt=""
-              width={130}
-              className="rounded-md cursor-pointer"
-            />
-            <Tag name="Psychology" />
-          </div>
 
-          <div className="mt-2">
-            <img
-              src="https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740"
-              alt=""
-              width={130}
-              className="rounded-md cursor-pointer"
-            />
-            <Tag name="Sci-fi" />
-          </div>
-          <div className="mt-2">
-            <img
-              src="https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740"
-              alt=""
-              width={130}
-              className="rounded-md cursor-pointer"
-            />
-            <Tag name="Romance" />
-          </div>
+          {/* the concept in this is to set the props from the data books, we doesn't import directly the books inside this component, instead we only pass the props cz we gonna render the books data dinamically in the pages we use this component */}
+          {booksRec.map((item) => (
+            <div key={item.id} className="mt-2">
+              <img
+                src={item.cover}
+                alt=""
+                width={130}
+                className="rounded-md cursor-pointer"
+                onClick={() => goToDetailStory(item.id)}
+              />
+              {/* condition to safely get only the first tag */}
+              {item.tags?.[0] && <Tag name={item.tags?.[0] || "untagged"} />}
+            </div>
+          ))}
+          
         </div>
       </div>
     </>
