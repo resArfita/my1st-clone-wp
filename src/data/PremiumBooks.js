@@ -11,7 +11,7 @@ const premiumbooks = [
     votes: "52.7K",
     comments: "322",
     tags: ["badboy", "broken", "+23 more"],
-    chapters: "29", //it can be merge with the chapterContent, but can do it later
+    chapters: "29", //it can be merge with the chapterContent (length - 1), but can do it later
     chapterContent: [
       {
         id: 1,
@@ -287,7 +287,7 @@ const premiumbooks = [
     ]
   }, 
   {
-    id: 7,
+    id: 8,
     title: "A Crown of Starlight",
     cover:
       "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",

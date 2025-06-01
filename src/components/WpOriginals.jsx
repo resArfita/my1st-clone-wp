@@ -15,6 +15,8 @@ const WpOriginals = () => {
     navigate(`/detail_story_wp_original/${id}`);
   };
 
+  const getTwoItems = originalsbook.slice(0, 2);
+
   return (
     <>
       <div className="flex flex-col mx-5 mb-6">
@@ -31,7 +33,7 @@ const WpOriginals = () => {
         </div>
 
         <div className="flex gap-3 mt-2">
-          {originalsbook.map((item) => (
+          {getTwoItems.map((item) => (
 
           <div
           key={item.id}
