@@ -13,9 +13,11 @@ const SearchContent = () => {
     navigate(`/detail_story/${id}`);
   }
 
+  const getSixItems = books.slice(1, 7)
+
   return (
     <>
-      <div className="h-screen py-3 mt-16 mb-130">
+      <div className="h-screen py-3 mt-16 mb-200">
         <div className=" flex items-center justify-between border-b border-gray-300 py-5 mx-3">
           <p className="text-xl font-bold">1.61K Stories</p>
           <div className="flex items-center gap-1 bg-gray-100 px-2 py-1 rounded-full">
@@ -24,7 +26,7 @@ const SearchContent = () => {
           </div>
         </div>
 
-        {books.map((stories) => (
+        {getSixItems.map((stories) => (
           <div
           key={stories.id}
           className="flex gap-4 mx-5 mt-6 mb-12 cursor-pointer"
