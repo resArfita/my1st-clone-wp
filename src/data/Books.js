@@ -171,8 +171,8 @@ const books = [
     latestUpdate: "4 new parts",
     lastRead: "part 35",
     author: "Alice Green",
-    views: "1.2.1M",
-    votes: "25.3K.8K",
+    views: "2.1M",
+    votes: "25.3K",
     comments: "45",
     tags: ["fantasy", "adventure", "magic", "+10 more"],
     chapters: "40",
@@ -298,6 +298,293 @@ const books = [
     votes: "5.5K",
     comments: "9",
     tags: ["mystery", "historical", "cozy", "+3 more"],
+    chapters: "18",
+    chapterContent: [
+      {
+        id: 1,
+        subtitle: "Chapter 1",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 2,
+        subtitle: "Chapter 2",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 3,
+        subtitle: "Chapter 3",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 4,
+        subtitle: "Chapter 4",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 5,
+        subtitle: "Chapter 5",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+    ]
+  },
+  {
+    id: 9,
+    title: "The Chronicles of Eldoria: Book One",
+    cover:
+      "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
+    latestUpdate: "Continue",
+    lastRead: "part 5",
+    author: "MythicalScribe",
+    views: "3.1M",
+    votes: "10.1K",
+    comments: "420",
+    tags: ["epic fantasy", "quest", "dragons", "+20 more"],
+    chapters: "45",
+    chapterContent: [
+      {
+        id: 1,
+        subtitle: "Chapter 1",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 2,
+        subtitle: "Chapter 2",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 3,
+        subtitle: "Chapter 3",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 4,
+        subtitle: "Chapter 4",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 5,
+        subtitle: "Chapter 5",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+    ]
+  },
+  {
+    id: 10,
+    title: "Cooking with Chef Leo: Global Flavors",
+    cover:
+      "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
+    latestUpdate: "3 new part",
+    lastRead: "part 9",
+    author: "ChefLeoOfficial",
+    views: "2.1M",
+    votes: "12.8K",
+    comments: "210",
+    tags: ["cooking", "food", "recipes", "+8 more"],
+    chapters: "20",
+    chapterContent: [
+      {
+        id: 1,
+        subtitle: "Chapter 1",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 2,
+        subtitle: "Chapter 2",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 3,
+        subtitle: "Chapter 3",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 4,
+        subtitle: "Chapter 4",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 5,
+        subtitle: "Chapter 5",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+    ]
+  },
+  {
+    id: 11,
+    title: "The Quantum Paradox",
+    cover:
+      "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
+    latestUpdate: "Continue",
+    lastRead: "part 1",
+    author: "MindBender",
+    views: "4.9M",
+    votes: "14.5K",
+    comments: "380",
+    tags: ["sci-fi", "thriller", "mystery", "+16 more"],
+    chapters: "25",
+    chapterContent: [
+      {
+        id: 1,
+        subtitle: "Chapter 1",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 2,
+        subtitle: "Chapter 2",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 3,
+        subtitle: "Chapter 3",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 4,
+        subtitle: "Chapter 4",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 5,
+        subtitle: "Chapter 5",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+    ]
+  },
+  {
+    id: 12,
+    title: "Art of Mindful Living",
+    cover:
+      "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
+    latestUpdate: "1 new part",
+    lastRead: "part 1",
+    author: "ZenMaster",
+    views: "550K",
+    votes: "2.8K",
+    comments: "65",
+    tags: ["self-improve", "wellness", "philosophy", "+3 more"],
+    chapters: "7",
+    chapterContent: [
+      {
+        id: 1,
+        subtitle: "Chapter 1",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 2,
+        subtitle: "Chapter 2",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 3,
+        subtitle: "Chapter 3",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 4,
+        subtitle: "Chapter 4",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 5,
+        subtitle: "Chapter 5",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+    ]
+  },
+  {
+    id: 13,
+    title: "Chronicles of the Last Guardian",
+    cover:
+      "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
+    latestUpdate: "1 new part",
+    lastRead: "part 15",
+    author: "EpicTeller",
+    views: "7.2M",
+    votes: "22.5K",
+    comments: "480",
+    tags: ["adventure", "magic", "epic", "+25 more"],
+    chapters: "40",
+    chapterContent: [
+      {
+        id: 1,
+        subtitle: "Chapter 1",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 2,
+        subtitle: "Chapter 2",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 3,
+        subtitle: "Chapter 3",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 4,
+        subtitle: "Chapter 4",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 5,
+        subtitle: "Chapter 5",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+    ]
+  },
+  {
+    id: 14,
+    title: "The Perfect Heist: An Action Thriller",
+    cover:
+      "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
+    latestUpdate: "1 new part",
+    lastRead: "part 3",
+    author: "AdrenalineJunkie",
+    views: "11.9M",
+    votes: "35.1K",
+    comments: "550",
+    tags: ["action", "thriller", "crime", "+13 more"],
+    chapters: "22",
+    chapterContent: [
+      {
+        id: 1,
+        subtitle: "Chapter 1",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 2,
+        subtitle: "Chapter 2",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 3,
+        subtitle: "Chapter 3",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 4,
+        subtitle: "Chapter 4",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+      {
+        id: 5,
+        subtitle: "Chapter 5",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
+      },
+    ]
+  },
+  {
+    id: 15,
+    title: "Codebreaker: A Cyberpunk Saga",
+    cover:
+      "https://img.freepik.com/free-photo/spring-blooming_93675-130564.jpg?t=st=1746692379~exp=1746695979~hmac=bffb618b226d41ed0d6492ac5b3f0037196d8d2311b9daf281320f0ae1df7926&w=740",
+    latestUpdate: "1 new part",
+    lastRead: "part 1",
+    author: "DigitalDreamer",
+    views: "6.8M",
+    votes: "19.3K",
+    comments: "390",
+    tags: ["cyberpunk", "sci-fi", "hacking", "+12 more"],
     chapters: "18",
     chapterContent: [
       {
