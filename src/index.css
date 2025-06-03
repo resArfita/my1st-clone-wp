@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 @layer base {
+    html {
+    @apply h-full;
+  }
+
   body {
     @apply max-w-md mx-auto min-h-screen shadow-md text-black border-r-2 border-l-2 border-gray-600;
   }

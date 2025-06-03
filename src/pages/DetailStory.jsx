@@ -7,7 +7,6 @@ import books from "../data/Books";
 import { useParams } from "react-router";
 import ButtonStartReading from "../utils/ButtonStartReading";
 import ButtonLibrary from "../utils/ButtonLibrary";
-import TagforDetailPage from "../utils/TagforDetailPage";
 
 const DetailStory = () => {
   const { id } = useParams();
@@ -16,13 +15,13 @@ const DetailStory = () => {
 
   return (
     <>
-      <div className="relative flex flex-col h-screen bg-green-400">
+      <div className="flex flex-col min-h-screen">
         
         {/* cover blured */}
         <div className="relative h-60 w-full overflow-hidden">
           <img
             src={detailStoryId.cover}
-            alt="cover"
+            alt="story cover"
             className="absolute top-0 left-0 w-full h-full object-cover blur-sm scale-105"
           />
           <div className="relative z-10">
