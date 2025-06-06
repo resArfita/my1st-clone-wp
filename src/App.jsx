@@ -24,10 +24,12 @@ import StoryPagePremium from "./pages/StoryPagePremium";
 import DetailStoryWpOri from "./pages/DetailStoryWpOri";
 import SidebarRead from "./components/SidebarRead";
 import StoryPageOri from "./pages/StoryPageOri";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
+    <ScrollToTop />
       <Routes>
         {/* <Route path="/" element={<Home />} /> */}
         <Route path="/greeting" element={<Greeting />} />
