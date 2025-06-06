@@ -7,16 +7,21 @@ import originalsbook from "../data/OriginalsBook";
 import { useParams } from "react-router";
 import ButtonStartReading from "../utils/ButtonStartReading";
 import ButtonLibrary from "../utils/ButtonLibrary";
+import { AiFillThunderbolt } from "react-icons/ai";
+import { useNavigate } from "react-router";
 
 const DetailStoryWpOri = () => {
   const { id } = useParams();
 
   const detailStoryId = originalsbook.find((item) => item.id === parseInt(id));
 
+  const navigate = useNavigate();
+  const goToReadOri = (id) => {
+    navigate(`/read_original/${id}`);
+  };
   return (
     <>
       <div className="w-full max-w-md mx-auto flex flex-col min-h-screen">
-        
         {/* cover blured */}
         <div className="relative h-60 w-full overflow-hidden">
           <img
@@ -29,7 +34,7 @@ const DetailStoryWpOri = () => {
           </div>
         </div>
 
-        <div className="absolute top-32 flex flex-col w-full items-center">
+        <div className="relative -top-40 flex flex-col w-full items-center px-4">
           {/* image floating */}
           <img
             src={detailStoryId.cover}
@@ -47,29 +52,43 @@ const DetailStoryWpOri = () => {
           <div className="flex items-center gap-5 text-gray-500 font-semibold">
             <div className="flex items-center gap-1">
               <MdOutlineRemoveRedEye size={23} />
-              <p>{detailStoryId.views}</p>
+              <p>{detailStoryId.views} Reads</p>
             </div>
             <div className="flex items-center gap-1">
               <IoMdStarOutline size={26} />
-              <p>{detailStoryId.votes}</p>
+              <p>{detailStoryId.votes} Votes</p>
             </div>
             <div className="flex items-center gap-1">
               <FaList size={17} />
-              <p>{detailStoryId.chapters}</p>
+              <p>{detailStoryId.chapters} Parts</p>
             </div>
           </div>
 
-          <div className="flex gap-5 my-5">
-            <div className="flex items-center gap-2 bg-neutral-900 rounded-full px-4 py-2">
+          <div className="flex gap-4 my-5 px-5">
+            <div
+            className="flex items-center gap-2 bg-neutral-900 rounded-full px-9 py-2"
+            onClick={() => goToReadOri(detailStoryId.id)}>
               <ButtonStartReading />
               <button className="font-bold text-white cursor-pointer">
                 Start reading
               </button>
             </div>
-            <div className="flex items-center gap-2 border-2 border-nautral-950 rounded-full px-6 py-2">
+            <div className="flex items-center gap-2 border-2 border-nautral-950 rounded-full px-8 py-2">
               <ButtonLibrary />
               <button className="font-bold">Library</button>
             </div>
+          </div>
+
+          <div className="flex flex-col items-center mb-6 mt-3">
+            <button className="p-3 w-full rounded-full bg-[#291C61] text-white flex items-center gap-2">
+              <AiFillThunderbolt size={25} />
+              <p className="font-bold">Go Premium+</p>
+            </button>
+            <p className="text-sm">
+              Includes{" "}
+              <span className="font-bold">200 Bonus Coins a month</span> plus
+              all Premium perks!
+            </p>
           </div>
 
           <div className="flex flex-col">
