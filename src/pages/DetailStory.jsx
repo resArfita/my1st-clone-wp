@@ -7,15 +7,20 @@ import books from "../data/Books";
 import { useParams } from "react-router";
 import ButtonStartReading from "../utils/ButtonStartReading";
 import ButtonLibrary from "../utils/ButtonLibrary";
+import { useNavigate } from "react-router";
 
 const DetailStory = () => {
   const { id } = useParams();
 
   const detailStoryId = books.find((item) => item.id === parseInt(id));
 
+  const navigate = useNavigate();
+  const goToReadPage = (id) => {
+    navigate(`/read/${id}`)
+  }
   return (
     <>
-      <div className="flex flex-col min-h-screen">
+      <div className="w-full max-w-md mx-auto flex flex-col min-h-screen">
         
         {/* cover blured */}
         <div className="relative h-60 w-full overflow-hidden">
@@ -29,7 +34,7 @@ const DetailStory = () => {
           </div>
         </div>
 
-        <div className="absolute top-32 flex flex-col w-full items-center">
+        <div className="relative -top-40 flex flex-col w-full items-center">
           {/* image floating */}
           <img
             src={detailStoryId.cover}
@@ -47,26 +52,28 @@ const DetailStory = () => {
           <div className="flex items-center gap-5 text-gray-500 font-semibold">
             <div className="flex items-center gap-1">
               <MdOutlineRemoveRedEye size={23} />
-              <p>{detailStoryId.views}</p>
+              <p>{detailStoryId.views} Reads</p>
             </div>
             <div className="flex items-center gap-1">
               <IoMdStarOutline size={26} />
-              <p>{detailStoryId.votes}</p>
+              <p>{detailStoryId.votes} Votes</p>
             </div>
             <div className="flex items-center gap-1">
               <FaList size={17} />
-              <p>{detailStoryId.chapters}</p>
+              <p>{detailStoryId.chapters} Parts</p>
             </div>
           </div>
 
-          <div className="flex gap-5 my-5">
-            <div className="flex items-center gap-2 bg-neutral-900 rounded-full px-4 py-2">
+          <div className="flex gap-4 my-5">
+            <div
+            className="flex items-center gap-2 bg-neutral-900 rounded-full px-9 py-2"
+            onClick={() => goToReadPage(detailStoryId.id)}>
               <ButtonStartReading />
               <button className="font-bold text-white cursor-pointer">
                 Start reading
               </button>
             </div>
-            <div className="flex items-center gap-2 border-2 border-nautral-950 rounded-full px-6 py-2">
+            <div className="flex items-center gap-2 border-2 border-nautral-950 rounded-full px-8 py-2">
               <ButtonLibrary />
               <button className="font-bold">Library</button>
             </div>
@@ -104,7 +111,7 @@ const DetailStory = () => {
               </div>
               <button className="text-[#280085] font-bold">See all</button>
             </div>
-            {detailStoryId.chapterContent.slice(1, 4).map((item, index) => (
+            {detailStoryId.chapterContent.slice(0, 3).map((item, index) => (
               <p key={index} className="my-5">
                 {item.subtitle}
               </p>

@@ -15,27 +15,27 @@ const originalsbook = [
     chapterContent: [
       {
         id: 1,
-        subtitle: "Chapter 1 premium",
+        subtitle: "Chapter 1 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 2,
-        subtitle: "Chapter 2 premium",
+        subtitle: "Chapter 2 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 3,
-        subtitle: "Chapter 3 premium",
+        subtitle: "Chapter 3 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 4,
-        subtitle: "Chapter 4 premium",
+        subtitle: "Chapter 4 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 5,
-        subtitle: "Chapter 5 premium",
+        subtitle: "Chapter 5 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
     ]
@@ -56,27 +56,27 @@ const originalsbook = [
     chapterContent: [
       {
         id: 1,
-        subtitle: "Chapter 1 premium",
+        subtitle: "Chapter 1 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 2,
-        subtitle: "Chapter 2 premium",
+        subtitle: "Chapter 2 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 3,
-        subtitle: "Chapter 3 premium",
+        subtitle: "Chapter 3 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 4,
-        subtitle: "Chapter 4 premium",
+        subtitle: "Chapter 4 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 5,
-        subtitle: "Chapter 5 premium",
+        subtitle: "Chapter 5 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
     ]
@@ -97,27 +97,27 @@ const originalsbook = [
     chapterContent: [
       {
         id: 1,
-        subtitle: "Chapter 1 premium",
+        subtitle: "Chapter 1 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 2,
-        subtitle: "Chapter 2 premium",
+        subtitle: "Chapter 2 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 3,
-        subtitle: "Chapter 3 premium",
+        subtitle: "Chapter 3 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 4,
-        subtitle: "Chapter 4 premium",
+        subtitle: "Chapter 4 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 5,
-        subtitle: "Chapter 5 premium",
+        subtitle: "Chapter 5 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
     ]
@@ -138,27 +138,27 @@ const originalsbook = [
     chapterContent: [
       {
         id: 1,
-        subtitle: "Chapter 1 premium",
+        subtitle: "Chapter 1 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 2,
-        subtitle: "Chapter 2 premium",
+        subtitle: "Chapter 2 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 3,
-        subtitle: "Chapter 3 premium",
+        subtitle: "Chapter 3 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 4,
-        subtitle: "Chapter 4 premium",
+        subtitle: "Chapter 4 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 5,
-        subtitle: "Chapter 5 premium",
+        subtitle: "Chapter 5 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
     ]
@@ -179,27 +179,27 @@ const originalsbook = [
     chapterContent: [
       {
         id: 1,
-        subtitle: "Chapter 1 premium",
+        subtitle: "Chapter 1 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 2,
-        subtitle: "Chapter 2 premium",
+        subtitle: "Chapter 2 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 3,
-        subtitle: "Chapter 3 premium",
+        subtitle: "Chapter 3 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 4,
-        subtitle: "Chapter 4 premium",
+        subtitle: "Chapter 4 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 5,
-        subtitle: "Chapter 5 premium",
+        subtitle: "Chapter 5 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
     ]
@@ -220,27 +220,27 @@ const originalsbook = [
     chapterContent: [
       {
         id: 1,
-        subtitle: "Chapter 1 premium",
+        subtitle: "Chapter 1 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 2,
-        subtitle: "Chapter 2 premium",
+        subtitle: "Chapter 2 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 3,
-        subtitle: "Chapter 3 premium",
+        subtitle: "Chapter 3 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 4,
-        subtitle: "Chapter 4 premium",
+        subtitle: "Chapter 4 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 5,
-        subtitle: "Chapter 5 premium",
+        subtitle: "Chapter 5 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
     ]
@@ -261,27 +261,27 @@ const originalsbook = [
     chapterContent: [
       {
         id: 1,
-        subtitle: "Chapter 1 premium",
+        subtitle: "Chapter 1 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 2,
-        subtitle: "Chapter 2 premium",
+        subtitle: "Chapter 2 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 3,
-        subtitle: "Chapter 3 premium",
+        subtitle: "Chapter 3 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 4,
-        subtitle: "Chapter 4 premium",
+        subtitle: "Chapter 4 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 5,
-        subtitle: "Chapter 5 premium",
+        subtitle: "Chapter 5 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
     ]
@@ -302,27 +302,27 @@ const originalsbook = [
     chapterContent: [
       {
         id: 1,
-        subtitle: "Chapter 1 premium",
+        subtitle: "Chapter 1 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 2,
-        subtitle: "Chapter 2 premium",
+        subtitle: "Chapter 2 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 3,
-        subtitle: "Chapter 3 premium",
+        subtitle: "Chapter 3 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 4,
-        subtitle: "Chapter 4 premium",
+        subtitle: "Chapter 4 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 5,
-        subtitle: "Chapter 5 premium",
+        subtitle: "Chapter 5 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
     ]
@@ -343,27 +343,27 @@ const originalsbook = [
     chapterContent: [
       {
         id: 1,
-        subtitle: "Chapter 1 premium",
+        subtitle: "Chapter 1 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 2,
-        subtitle: "Chapter 2 premium",
+        subtitle: "Chapter 2 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 3,
-        subtitle: "Chapter 3 premium",
+        subtitle: "Chapter 3 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 4,
-        subtitle: "Chapter 4 premium",
+        subtitle: "Chapter 4 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 5,
-        subtitle: "Chapter 5 premium",
+        subtitle: "Chapter 5 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
     ]
@@ -384,27 +384,27 @@ const originalsbook = [
     chapterContent: [
       {
         id: 1,
-        subtitle: "Chapter 1 premium",
+        subtitle: "Chapter 1 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 2,
-        subtitle: "Chapter 2 premium",
+        subtitle: "Chapter 2 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 3,
-        subtitle: "Chapter 3 premium",
+        subtitle: "Chapter 3 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 4,
-        subtitle: "Chapter 4 premium",
+        subtitle: "Chapter 4 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
       {
         id: 5,
-        subtitle: "Chapter 5 premium",
+        subtitle: "Chapter 5 original",
         content: "lorem ipsum dolor sit amet consectetur adipisicing elit. vitae quaerat culpa, temporibus repellendus blanditiis voluptate enim inventore labore tenetur modi eveniet nam debitis. perferendis illum quis quae sed cumque unde."
       },
     ]

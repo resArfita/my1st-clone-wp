@@ -23,6 +23,7 @@ import DetailStoryPremium from "./pages/DetailStoryPremium";
 import StoryPagePremium from "./pages/StoryPagePremium";
 import DetailStoryWpOri from "./pages/DetailStoryWpOri";
 import SidebarRead from "./components/SidebarRead";
+import StoryPageOri from "./pages/StoryPageOri";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path="/detail_story/:id" element={<DetailStory />} />
         <Route path="/read_premium/:id" element={<StoryPagePremium />} />
         <Route path="/detail_story_premium/:id" element={<DetailStoryPremium />} />
+        <Route path="/read_original/:id" element={<StoryPageOri />} />
         <Route path="/detail_story_wp_original/:id" element={<DetailStoryWpOri />} />
 
         {/* nested route for premium picks */}
